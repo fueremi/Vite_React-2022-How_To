@@ -326,6 +326,128 @@ const Index = () => {
               </span>
             </div>
           </div>
+          <div className="mb-4">
+            <h3 className="font-medium text-xl text-slate-800">Recoil</h3>
+            <p className="text-justify font-normal text-sm text-slate-800">
+              Recoil is easy use state management for react, and its developed
+              by <span className="text-indigo-400">Meta</span> creator of react.
+              Here's good{" "}
+              <a
+                href="https://blog.openreplay.com/using-recoil-instead-of-redux-for-state-management-in-react-applications"
+                target="_blank"
+                className="font-semibold text-emerald-500 border-b-2 border-emerald-500"
+              >
+                article
+              </a>{" "}
+              about it.
+            </p>
+
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              Command :
+            </div>
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              1. Add recoil
+            </div>
+            <h4 className="font-semibold text-sm text-slate-800">NPM</h4>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                <span className="text-indigo-400">npm</span> install recoil
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <h4 className="font-semibold text-sm text-slate-800">Yarn</h4>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                <span className="text-indigo-400">yarn</span> add recoil
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              2. Create store for management state{" "}
+              <span className="text-indigo-400">src/store/index.jsx</span>
+            </div>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                <p className="mb-2">{`import {atom} from "recoil"`}</p>
+                <p>{`export const todos = atom({
+                  key: "todos",
+                  default: ""
+                })`}</p>
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              3. Using recoil to get and set state{" "}
+            </div>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                <p>{`import {useRecoilState} from "recoil"`}</p>
+                <p className="mb-2">{`import {todos} from "../store/"`}</p>
+                <p>{`const [todo, setTodo] = useRecoilState(todo)`}</p>
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
         </section>
       </div>
     </div>
