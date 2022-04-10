@@ -179,6 +179,23 @@ const Index = () => {
             </div>
           </div>
           <div className="mb-4">
+            <h3 className="font-medium text-xl text-slate-800">
+              React Router v6
+            </h3>
+            <p className="text-justify font-normal text-sm text-slate-800">
+              Its standard router for react SPA, so i think you guys already
+              know how to install and use it. Look at react router{" "}
+              <a
+                href="https://reactrouter.com/docs/en/v6/getting-started/overview"
+                target="_blank"
+                className="font-semibold text-emerald-500 border-b-2 border-emerald-500"
+              >
+                documentation
+              </a>
+              .
+            </p>
+          </div>
+          <div className="mb-4">
             <h3 className="font-medium text-xl text-slate-800">Tailwind CSS</h3>
             <p className="text-justify font-normal text-sm text-slate-800">
               <span className="font-semibold text-indigo-400">
