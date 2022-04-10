@@ -9,7 +9,7 @@ const Index = () => {
         <h1 className="font-bold text-4xl text-slate-800 text-center">
           Vite React + React Router V6 + Recoil + Tailwind CSS
         </h1>
-        <section id="prerequisite" className="pb-8">
+        <section id="prerequisite" className="mt-8 pb-8">
           <h2 className="font-semibold text-2xl text-slate-800 mb-2 text-center">
             Why ?
           </h2>
