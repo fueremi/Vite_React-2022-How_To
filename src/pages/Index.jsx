@@ -9,7 +9,32 @@ const Index = () => {
         <h1 className="font-bold text-4xl text-slate-800 text-center">
           Vite React + React Router V6 + Recoil + Tailwind CSS
         </h1>
-        <section id="prerequisite" className="mt-8">
+        <section id="prerequisite" className="pb-8">
+          <h2 className="font-semibold text-2xl text-slate-800 mb-2 text-center">
+            Why ?
+          </h2>
+
+          <p className="text-justify font-normal text-sm text-slate-800">
+            In case you're needed to create a new project with react, you
+            probably will be needed react itself, a router for Single Page
+            Application (SPA), a state management, and a css for styling your
+            project. The question is what's the best base react project with all
+            the requirement. The answer for me its same as the title.
+          </p>
+          <p className="text-justify font-normal text-sm text-slate-800">
+            For react instead using create-react-app, I highly recommend you
+            choosing Vite instead, simply because Vite is light and fast. React
+            Router V6 is commonly router package for SPA so nothing more about
+            it. For state management instead using redux or useContext hook, i
+            highly recommend you to choose recoil. If you come from
+            redux/useContext hook you may face creating reducer and action so
+            complicated but with recoil it's so easy to use it. Lastly, tailwind
+            in my opinion is the best CSS for react because simply you can
+            styling your page wihout ever leaving your .jsx
+          </p>
+        </section>
+
+        <section id="prerequisite" className="pb-8">
           <h2 className="font-semibold text-2xl text-slate-800 mb-2 text-center">
             Pre-requisite
           </h2>
@@ -54,7 +79,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="installation" className="mt-8">
+        <section id="installation" className="pb-8">
           <h2 className="font-semibold text-2xl text-slate-800 mb-2 text-center">
             Installation
           </h2>
@@ -171,6 +196,135 @@ const Index = () => {
               </a>{" "}
               for more reason why React is good match with Tailwind CSS.
             </p>
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              Command :
+            </div>
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              1. Add tailwind, postcss, autoprefixer depedency
+            </div>
+            <h4 className="font-semibold text-sm text-slate-800">NPM</h4>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                <span className="text-indigo-400">npm</span> install -D
+                tailwindcss postcss autoprefixer
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <h4 className="font-semibold text-sm text-slate-800">Yarn</h4>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                <span className="text-indigo-400">yarn</span> add -D tailwindcss
+                postcss autoprefixer
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              2. Initiate tailwindcss
+            </div>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                <span className="text-indigo-400">npx</span> tailwindcss init -p
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              3. Configure which file should tailwind watch{" "}
+              <span className="text-indigo-400">tailwind.config.js</span>
+            </div>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                {`content: [ "./index.html", "./src/**/*.{(vue, js, ts, jsx, tsx)}
+                ", ],`}
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div className="my-2 font-semibold text-sm text-slate-800">
+              4. Initiate CSS <span className="text-indigo-400">index.css</span>
+            </div>
+            <div className="flex justify-between items-center bg-slate-100 backdrop-filter backdrop-blur-xl bg-opacity-50 rounded-lg py-2 px-6 mb-2">
+              <code className="rounded-lg font-normal text-sm text-dark-800">
+                {`@tailwind base;
+@tailwind components;
+@tailwind utilities;`}
+              </code>
+              <span className="text-slate-400 hover:text-slate-800 hover:cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                  />
+                </svg>
+              </span>
+            </div>
           </div>
         </section>
       </div>
