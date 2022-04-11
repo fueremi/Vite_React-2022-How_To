@@ -1,6 +1,6 @@
 const Index = () => {
   return (
-    <div className="w-screen h-screen overflow-y-scroll">
+    <div className="w-screen md:max-w-2xl mx-auto h-screen overflow-y-scroll no-scrollbar">
       <div className="absolute left-[calc(50%-50px)] top-40 -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-indigo-400 -z-10 rounded-full mix-blend-multiply filter blur-2xl opacity-40"></div>
       <div className="absolute  left-[calc(50%+50px)] top-40 -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-emerald-400 -z-10 rounded-full mix-blend-multiply filter blur-2xl opacity-40  animation-delay-2000"></div>
       <div className="absolute left-[calc(50%+50px)] bottom-0 -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-indigo-400 -z-10 rounded-full mix-blend-multiply filter blur-2xl opacity-40"></div>
